@@ -1,0 +1,45 @@
+div {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+ul {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  background-color: transparent;
+}
+ 
+ul:hover li {
+  filter: blur(10px);
+}
+ 
+li {
+  text-align: center;
+  width: fit-content;
+  display: inline-block;
+  transition: 0.5s ease;
+  padding: 20px;
+  text-transform: uppercase;
+}
+ 
+ul li:hover {
+  font-size: 32px;
+  animation: bg 1s ease-in-out forwards;
+  border-radius: 10px;
+  filter: blur(0);
+  cursor: pointer;
+}
+ 
+@keyframes bg {
+  0% {
+    background-color: transparent;
+    color: black;
+  }
+  100% {
+    background-color: darkcyan;
+    color: whitesmoke;
+  }
+}
